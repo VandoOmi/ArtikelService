@@ -1,5 +1,18 @@
-### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+### GET request
+GET http://localhost:8080/myappdata/articles
+Accept: application/json
+### Get request for id 1
+GET http://localhost:8080/myappdata/articles/1
+Accept: application/json
 
-###
+### Post request
+POST http://localhost:8080/myappdata/articles
+Content-Type: application/json
+
+{
+  "id" : 3,
+  "bezeichnung": "Java for Professionals",
+  "beschreibung" : "Java-Buch für krasse Profis",
+  "preisEK": 7.49,
+  "preisVK": 19.99
+}
